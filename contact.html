@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-151941394-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+	  gtag('config', 'UA-151941394-1');
+	</script>
+	
+	<title> 1412 Apts</title>
+	<meta charset = "UTF-8" >
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel= "stylesheet" type= "text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/html5reset.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+	<link rel= "stylesheet" type= "text/css" href="css/style.css">
+</head>
+<body>
+	<div class="skip"><a href="#contianer_contact">Skip to Main Content</a></div>
+	<!-- <div class="container"> -->
+
+	<div class="nav">
+		<nav  class="navbar navbar-expand-sm bg-light justify-content-center fixed-top">
+			<ul class="navbar-nav">
+					<li class="nav-item">
+				<li><a  href="index.html">ABOUT</a>
+				</li>
+				<li class="nav-item">
+				<li><a class="nav-link" href="apartment.html">APARTMENTS</a>
+				</li>
+				<li class="nav-item">
+				<li><a class="nav-link" href="questions.html">FAQ</a>
+				</li>
+				<li class="nav-item">
+				<li><a class="nav-link active" href="contact.html">CONTACT</a>
+				</li>
+			</ul>
+		</nav>
+	</div>
+
+<!-- cite picture from https://images.app.goo.gl/gCL21Yq8w1FAEocd9 -->
+	<header id='main'class="title" style="background-image: url('539photo/rental_season.jpg')"></header>
+
+  <div id='contianer_contact' text-center>
+    <h3> Please Contact US</h3>
+  <!-- <div class="col-lg-12 text-center"> -->
+	<div class='contact_details'>
+		<a class="flip-card">
+		  <div class="flip-card-inner">
+		    <div class="flip-card-front">
+<!-- cite picture from https://images.app.goo.gl/oqmnynjgTo3kp24g6 -->
+		<img class="center" src='539photo/manage.jpg' alt="manage photo" style="width:100%;height:100%" >
+		</div>
+	    <div class="flip-card-back">
+				<p>Manager on duty:  Clementine Kornder</p>
+				<p>Landlord:  Ming Cheng</p>
+				<p>Phone:  313-426-0571</p>
+				<p>Email: 1412Geddes@gmail.com</p>
+	    </div>
+	  </div>
+	</a>
+
+<hr>
+<h5>What tenants like about this apartment:</h5>
+<div class='more'>
+<p><strong>Location: </strong> Close to campus.</p>
+<br>
+<p><strong>Large space: </strong>This apartment feels much bigger than our regular apartments because it is but also because the kitchen is separate from the living area. This is the perfect space for a 3 roommate situation (please note, adding a 3rd roommate in 2bd apartment costs extra, see FAQ)</p>
+<br>
+<p><strong>Nice kitchen:  </strong>Plenty of cabinet and counter space, dishwasher, electric glass top oven/stove, fridge and garbage disposal</p>
+<br>
+<p><strong>Utilities: </strong> Heat, hot/cold water, building wifi and trash/recycle are all covered by landlord. Tenants pay DTE for electricity and have the option to get their own internet account for faster, private service.</p>
+</div>
+<hr>
+
+
+	</div>
+    <form class="form-horizontal"
+					action='https://formspree.io/xrgzjzpk'
+					method='POST'
+		>
+
+	<div class="form-group">
+
+        <label for="Name" class="col-sm-4 ">Name</label>
+				<div class="col-sm-4">
+          <input type= 'name' class="form-control" id="Name" name="name" placeholder="Enter name">
+        </div>
+
+
+      <!-- <div class="form-group"> -->
+        <label for="Email" class="col-sm-4 control-label">Email</label>
+        <div class="col-sm-4">
+          <input type='email'class="form-control" id="Email" name="email" placeholder='Enter email'>
+        </div>
+      <!-- </div> -->
+
+
+		<!-- <div class="form-group"> -->
+			<label for="apts" class="col-sm-4 control-label">Apartment Preference</label>
+			<div class="col-sm-4">
+				<input type= 'aptprefe' class="form-control" id="apts" name='aptprefe' placeholder='Enter your #apartment'>
+			</div>
+		<!-- </div> -->
+
+
+      <!-- <div class="form-group"> -->
+        <label for="Message" class="col-sm-4 control-label">Message</label>
+        <div class="col-sm-4">
+          <input type='message' class="form-control" id="Message" name='message' placeholder='Enter your message'>
+        </div>
+      <!-- </div> -->
+<!--
+      <div class="form-group"> -->
+        <!-- <div class="col-sm-offset-4 "> -->
+					<div class="col-sm-12">
+          <button type='submit' class="btn btn-default">Submit</button>
+			<!-- code from	https://www.w3schools.com/bootstrap/bootstrap_ref_css_forms.asp -->
+					<!-- </div> -->
+        </div>
+  </div>
+
+			<!-- <label>
+		     Your email:
+		     <input type="text" name="_replyto">
+		   </label>
+		   <label>
+		     Your message:
+		     <textarea name="message"></textarea>
+		   </label>
+
+		   <your other form fields go here -->
+
+		   <!-- <button type="submit">Send</button> -->
+
+
+    </form>
+ </div>
+</div>
+
+<footer>
+	<p> &copy; 2019 by Muzi Lin</p>
+</footer>
+
+</body>
+</html>

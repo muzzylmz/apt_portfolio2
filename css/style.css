@@ -1,0 +1,932 @@
+html{
+    scroll-behavior: smooth;
+}
+
+header {
+  padding: 40px 0;
+}
+
+header p{
+  color: black;
+  font-size: 24px;
+  padding: 0 100px;
+  text-align: center;
+}
+
+
+/* cite picture from https://medicine.umich.edu/medschool/education/md-program/our-community/housing */
+header.title {
+  background: url("../539photo/ann_arbor.jpg") no-repeat center scroll;
+  background-size: cover;
+  -webkit-background-size: cover;
+  margin-bottom: 100px;
+}
+
+nav ul{
+  list-style-type: none;
+}
+
+nav li{
+  display:inline-block;
+  padding-right: 20px;
+}
+
+
+*{
+margin: 0;
+padding: 0;
+}
+
+.neon-wrap {
+      position: absolute;
+      top: 60%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      padding-top:100px;
+    }
+    .neon-wrap span {
+      display: block;
+    }
+    .neon-text {
+     font-family: 'Supermercado One', cursive;
+      font-size: 20px;
+      animation: neon 2s infinite;
+    }
+    .neon-by {
+      color: #FFFF00;
+      text-shadow: -6px 0px 5px #FF8C00, 0px 0px 2px #FF8C00;
+    }
+    @keyframes neon {
+      0%, 30%, 32%, 34% {
+        color: #222;
+        text-shadow: -3px 0px 5px #222, 0px 0px 2px #000;
+      }
+      31%, 33%, 35%, 100% {
+        color: #FFD700;
+        text-shadow: -3px 0px 5px #FF8C00, 0px 0px 2px #FF8C00;
+      }
+    }
+
+
+ul.navbar-nav{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position:relative;
+    display:flex;
+
+}
+
+
+ul.navbar-nav li a {
+    display: block;
+    color: #036fad;
+    font-family:'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    text-align: left;
+    padding: 15px 15px;
+    text-decoration: none;
+    margin-top: 0px;
+    font-style: bold;
+    text-align: center;
+}
+
+ul.navbar-nav li a:hover:not(.active) {color: #93ede9; display:inline-block; font-style: bold;}
+
+ul.navbar-nav li a.active {color: #DB7C00; font-style: bold;}
+
+.rental_content {
+  background-color: white;
+  padding: 10px;
+  font-family: Helvetica, sans-serif;
+  padding: 0 20px 20px;
+  width:100%;
+}
+
+/* .skip{ */
+.skip a{
+  background: white;
+  left: 0;
+  padding: 6px;
+  position: relative/*Your code here - position relative to the parent */;
+  top:-40px      /*Your code here - place 40px higher */;
+  -webkit-transition: top 1s ease-out;
+  transition: top 1s ease-out;
+  z-index: 99999;
+}
+
+/* a.skip:focus{ */
+.skip a:focus{
+  top: 0px;
+  z-index: 99999;
+}
+*:focus{
+  border: 2px solid black;
+}
+
+
+header{
+  background-attachment: fixed; /* Parallax effect */
+  background-image: url('../539photo/ann_arbor.jpg');      /* Your code here - Link to header.jpg in the images folder */
+  background-position: center;  /* Parallax effect */
+  background-repeat: no-repeat; /* Parallax effect */
+  background-size: cover;       /* Parallax effect */
+  color: white;
+  height: 800px;                /* Parallax effect */
+
+  /*Your code here - cover the entire row*/
+  grid-column: 1/-1;
+  /* grid-row:2/3; */
+}
+
+
+.panel {
+  width: 80%;
+  margin: 0 auto;
+  text-align: left;
+}
+
+
+
+p{
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  line-height: 2em;
+  font-size: 18px;
+  padding:15px;
+  margin-top:0;
+  margin-bottom:0;
+  color:solid black;
+}
+
+
+h1::first-letter {
+  color: #ff0000;
+  font-size: 2.5em;\
+  font-family: Arial;
+}
+
+h1{
+	font-size: 50px;
+  line-height:1;
+  text-align: center;
+  color:#DB006E;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  /* font-weight: 800; */
+  margin:0 auto;
+  /* width:30%; */
+  padding: 160px 0;
+  letter-spacing: .05em;
+  text-shadow:
+    4px 4px 0px #d5d5d5,
+    7px 7px 0px rgba(0, 0, 0, 0.2);
+}
+
+
+
+/*Home-- About*****************************************************/
+
+article{
+  width:60%;
+  max-width:992px;
+  margin:0 auto;
+}
+
+.img-responsive{
+  width:100%;
+
+}
+
+
+.apttitle{
+text-align: center;
+font-size: 40px;
+padding-top: 0px;
+margin-top: 20px;
+margin-bottom: 100px;
+
+}
+
+.about-image{
+  padding-bottom: 100px;
+  grid-column:2/-1;
+  /* grid-row:3/4; */
+  overflow:hidden;
+  max-height: 700px;
+
+}
+
+.about{
+  /*Your code here */
+  grid-column:2/3;
+  /* grid-row: 3/4; */
+}
+
+.text-block{
+
+   /*Your code here */
+  align-self: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, .8);
+  border: 3px solid black;
+  padding: 30px;
+}
+
+div.post h3{
+font-size: 30px;
+}
+
+.news{
+  font-size: 20px;
+}
+
+
+
+
+#container_contact{
+  margin-top: 20px;
+  margin-bottom: 150px;
+  margin-right: 40px;
+  margin-left:40px;
+  display:grid;
+  grid-template-columns: repeat(1, 1fr);
+}
+.container img{
+  width:100%;
+}
+.container{
+  display: grid;
+  grid-template-columns: 1fr;
+  /* grid-template-columns: 100px 500px 100px;
+  grid-row-gap:15px;
+
+  grid-template-rows: 30px auto auto auto auto auto 100px;
+  width: 100vw; */
+}
+
+#about-image {
+  background: url(539photo/Building1.png) left center no-repeat, url(539photo/Building2.png) right center no-repeat;
+
+
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f1f1f9;
+
+  margin:0;
+  /* padding:10px; */
+
+  font-family: Arial;
+  /* font-family: Helvetica, sans-serif; */
+}
+
+
+
+/*Apartment************************************************************/
+
+/* styling for the wait list */
+.waitlist a:link{color:#0068D6;}
+.waitlist a:hover {text-decoration:none;color:yellowgreen;font-weight:bold;}
+.waitlist {
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    line-height: 2em;
+    padding:10px;
+}
+
+/* Center website */
+#main {
+  margin: auto;
+}
+
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+
+
+/* **** gallery practice*********** */
+.container2 {
+  margin: 10px;
+  display:flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: left;
+  justify-content:center;
+
+  min-height: 100vh;
+}
+
+
+
+img:hover{
+  opacity: .5;
+  transition:.9;
+}
+/* .row {
+  margin: 10px -16px;
+} */
+
+/* Add padding BETWEEN each column */
+/* .row,
+.row > .column {
+  padding: 8px;
+} */
+.container2,
+.container2 > .column {
+  padding: 8px;
+}
+/* Create three equal columns that floats next to each other */
+.column {
+  /* float: left; */
+  width: 33.33%;
+  display: none;
+  justify-content: space-between;
+}
+
+/* Clear floats after rows */
+.container2:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+  font-family: Helvetica, sans-serif;
+  padding: 0 20px 20px;
+  width:300%;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+
+
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.projectintro{
+  font-family:'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  margin:0 auto;
+  width:60%;
+  max-width: 750px;
+  font-size:25px;
+
+}
+
+div.project
+{
+  font-family:'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  text-align: center;
+  font-weight:600;
+  padding-top: 20px;
+  font-size: 1em;
+
+}
+
+h4
+{font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+font-weight: 600;
+padding: 20px 20px 0px 20px;
+font-size: 1.5em;}
+/* cite for card: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_flip_card */
+
+
+
+
+
+
+/*questions*/
+h2 {
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 800;
+  padding: 20px 20px 0px 20px;
+  font-size: 3em;}
+h3 {
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 800;
+  padding: 20px 20px 0px 20px;
+  font-size: 3em;
+  text-align: center;
+
+}
+
+
+
+/*
+#about_img{
+  display: inline-block;
+  float:left;
+  width:45%;
+  text-align: center;
+  margin: 0.5em;
+  padding: 100px 32px 32px 50px;
+
+} */
+
+#aptquestions{
+  display: contents;
+  /* float:left; */
+  width:50%;
+  text-align: center;
+  margin-left: 10px;
+
+}
+
+.accordion {
+  background-color: #eee;
+  color: #444;
+  /* cursor: pointer; */
+  padding: 1.2em;
+  width: 80%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 1.2em;
+  transition: 0.4s;
+}
+
+/* .active, .accordion:hover {
+  background-color: #ccc;
+} */
+
+.accordion:after {
+  content: '\002B';
+  color: #777;
+  font-weight: bold;
+  /* float: right; */
+  margin-left: 5px;
+}
+
+/* .active:after {
+  content: "\2212";
+} */
+
+.panel {
+  padding: 0 20px;
+  background-color:white ;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+
+
+div.aboutapt p{
+  font-size: 20px;
+  margin:0;
+  /* float:center; */
+
+}
+
+
+
+/* practice if filter grid work */
+
+.gallery-title
+{
+    font-size: 36px;
+    color: #42B32F;
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 70px;
+}
+.gallery-title:after {
+    content: "";
+    position: absolute;
+    width: 7.5%;
+    left: 46.5%;
+    height: 45px;
+    border-bottom: 1px solid #5e5e5e;
+}
+.filter-button
+{
+    font-size: 18px;
+    border: 1px solid #42B32F;
+    border-radius: 5px;
+    text-align: center;
+    color: #42B32F;
+    margin-bottom: 30px;
+
+}
+.filter-button:hover
+{
+    font-size: 18px;
+    border: 1px solid #42B32F;
+    border-radius: 5px;
+    text-align: center;
+    color: #ffffff;
+    background-color: #42B32F;
+
+}
+.btn-default:active .filter-button:active
+{
+    background-color: #42B32F;
+    color: white;
+}
+
+.port-image
+{
+    width: 100%;
+}
+
+.gallery_product
+{
+    margin-bottom: 30px;
+}
+
+
+
+/*contact****************************************************************************/
+
+.more{
+  text-align: left;
+  margin-left: 100px;
+  margin-right:100px;
+}
+img:hover{
+  outline:3px solid black;
+}
+
+.flip-card.active{
+  color: #FFA533;
+  font-style: bold;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  display:block;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #2980b9;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+
+
+.title{
+  padding-right: 20px;
+  padding-left: 100px;
+  margin-right: auto;
+  margin-left: auto;
+  font-family:'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  text-align: center;
+
+}
+.contact_details{
+  text-align: center;
+  padding:5px;
+}
+
+.text-center{
+  background-color: #FFFFFF;
+  margin-top: 0px;
+}
+.form-group{
+  text-align: center;
+}
+
+form.form-horizontal{
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+.form-group {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+.form-group > * {
+  flex: 1 100%;
+}
+
+.form-group label {
+  margin: 5px 10px 5px 0;
+}
+
+.form-group input {
+  vertical-align: left;
+  margin: 5px 10px 5px 0;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+
+.form-group button {
+  padding: 10px 20px;
+  background-color: dodgerblue;
+  border: 1px solid #ddd;
+  color: white;
+  cursor: pointer;
+}
+
+.form-group button:hover {
+  background-color: royalblue;
+}
+
+
+
+footer {
+    font-size: 20px;
+    color :solid black;
+  	text-align: center;
+  	font-family:'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  	background-color: #D3D3D3;
+    margin-top: 100px;
+    grid-column: 1 / -1;
+    /* grid-row: 7 / auto;; */
+    padding-top: 30px;
+}
+
+
+h5 {
+  font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+  font-size: 30px;
+  padding: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  text-rendering: optimizeLegibility;
+
+  color: #2c2c2c;
+  font-weight: bold;
+  letter-spacing: .05em;
+  text-shadow:
+    4px 4px 0px #d5d5d5,
+    7px 7px 0px rgba(0, 0, 0, 0.2);
+  }
+
+
+
+
+/* // feature page// https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_parallax_device*/
+body, html {
+  height: 100%;
+}
+
+.parallax {
+  /* The image used */
+  /* background-image: url('539photo/feature.jpg') ; */
+  background-image:url("../539photo/feature.jpg");
+  /* Full height */
+  height: 100%;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/*  */
+
+@media screen and (min-width: 768px) {
+
+    .container{
+      grid-template-columns: 1fr 1fr 1fr 1fr ;
+    }
+    /* turn off parallel for tablets */
+    .parallax {
+      background-attachment: scroll;
+}
+    .ul.navbar-nav li {float: none;}
+
+/* .column {
+    width: 100%;
+} */
+    .form-inline input {
+      margin: 10px 0;
+}
+
+      .form-inline {
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.nav{
+  /* background-color:#f8f9fa; */
+  text-align:right;
+  /* padding: 35px 0px; */
+  grid-column: 1/-1;
+  /* grid-row:1/2; */
+}
+
+.neon-text{
+  font-size: 30px;
+}
+
+
+.about-image{
+  /* grid-column: 4/5; fc */
+  grid-column: 1/3;
+  /* grid-row: 3/4;  delete*/
+  max-height: 700px;
+  overflow: hidden;
+  width:100%
+  }
+
+.about{
+  grid-column: 1/4;
+  /* grid-row: 3/4; */ delte
+  /*Your code here */
+}
+
+.container2{
+  flex:0 0 12em;
+  flex-direction: row;
+  /* flex: 1; */
+  margin:10px;
+}
+.content {
+  background-color: white;
+  padding: 10px;
+  font-family: Helvetica, sans-serif;
+  padding: 0 20px 20px;
+  width:150%;
+}
+.rental_content {
+    background-color: white;
+    padding: 10px;
+    font-family: Helvetica, sans-serif;
+    padding: 0 20px 20px;
+    width:100%;
+}
+
+h1{
+	font-size: 70px;
+  line-height:1;
+  text-align: center;
+  color:#DB006E;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  /* font-weight: 800; */
+  margin:0 auto;
+  /* width:30%; */
+  padding: 50px 0;
+  letter-spacing: .05em;
+  text-shadow:
+    4px 4px 0px #d5d5d5,
+    7px 7px 0px rgba(0, 0, 0, 0.2);
+}
+
+}
+
+@media (min-width: 1024px) {
+    .column {
+        width: 25%;
+    }
+    form.form-horizontal{
+      margin-top: 100px;
+      margin-bottom:100px;
+    }
+    /* //turn off parallax scrolling for desktop// */
+    .parallax {
+  background-attachment: scroll;
+}
+.neon-text{
+  font-size: 40px;
+}
+
+    .container{
+  grid-template-columns: 1fr 1fr 1fr 1fr ;
+}
+
+    .about-image{
+  /* grid-column: 4/5; fc */
+  grid-column: 1/4;
+  /* grid-row: 3/4;  delete*/
+  max-height: 700px;
+  overflow: hidden;
+   /*Your code here */
+
+  }
+
+.about{
+  grid-column: 1/-1;
+  /* grid-row: 3/4; */ delte
+  /*Your code here */
+}
+
+.container2{
+  /* flex:0 0 12em; */
+  flex-direction: row;
+  flex: 1;
+  margin:10px;
+}
+
+
+.content {
+  background-color: white;
+  padding: 10px;
+  font-family: Helvetica, sans-serif;
+  padding: 0 20px 20px;
+  width:100%;
+}
+.rental_content {
+  background-color: white;
+  padding: 10px;
+  font-family: Helvetica, sans-serif;
+  padding: 0 20px 20px;
+  width:100%;
+}
+
+h1{
+	font-size: 80x;
+  line-height:1;
+  text-align: center;
+  color:#DB006E;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  /* font-weight: 800; */
+  margin:0 auto;
+  /* width:30%; */
+  padding: 50px 0;
+  letter-spacing: .05em;
+  text-shadow:
+    4px 4px 0px #d5d5d5,
+    7px 7px 0px rgba(0, 0, 0, 0.2);
+}
+
+}
+
+@media screen and (prefers-reduced-motion: reduce){
+  html{
+      scroll-behavior: auto;
+  }
+
+  .skip a{
+    /* background: #f8f9fa; */
+    left: 0;
+    padding: 6px;
+    position: absolute;
+    top: -40px;
+    -webkit-transition: initial;/* Your code here - set to default setting */
+    transition: initial;/* Your code here - set to default setting */
+    z-index: 1;
+  }
+
+  .skip a:focus{
+    top:0;
+  }
+}
